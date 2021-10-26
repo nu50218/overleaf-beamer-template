@@ -1,0 +1,64 @@
+\documentclass[10pt]{beamer}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+
+\usepackage{multimedia}
+
+\setbeamertemplate{theorems}[numbered]
+
+\uselanguage{japanese}
+\languagepath{japanese}
+\deftranslation[to=japanese]{Theorem}{定理}
+\deftranslation[to=japanese]{Lemma}{補題}
+\deftranslation[to=japanese]{Example}{例}
+\deftranslation[to=japanese]{Examples}{例}
+\deftranslation[to=japanese]{Definition}{定義}
+\deftranslation[to=japanese]{Definitions}{定義}
+\deftranslation[to=japanese]{Problem}{問題}
+\deftranslation[to=japanese]{Solution}{解}
+\deftranslation[to=japanese]{Fact}{事実}
+\deftranslation[to=japanese]{Proof}{証明}
+\deftranslation[to=japanese]{Figure}{図}
+\def\proofname{証明}
+
+\usepackage{zxjatype}
+\usepackage[ipa]{zxjafont}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{TODO: タイトル}
+% \subtitle{英タイトル}
+% \date{\today}
+\date{}
+\author{TODO: 著者}
+\institute{TODO: 所属}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\metroset{sectionpage=none}
+\metroset{block=fill}
+\AtBeginSection[]
+{
+    \begin{frame}{目次}
+        \setbeamertemplate{section in toc}[sections numbered]
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\begin{document}
+
+\maketitle
+
+% TODO: write here
+
+\end{document}
