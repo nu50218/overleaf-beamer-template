@@ -28,6 +28,18 @@
 \usetheme[numbering=fraction]{metropolis}
 \usepackage{appendixnumberbeamer}
 
+% https://topanswers.xyz/tex?q=2042
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{4pt}
+\makeatother
+\setbeamertemplate{footline}{%
+  \hfill\smash{\usebeamerfont{page number in head/foot}\usebeamercolor[fg]{page number in head/foot}\raisebox{0.1cm}{\usebeamertemplate{page number in head/foot}}~}
+}
+\setbeamercolor{page number in head/foot}{fg=gray}
+\setbeamertemplate{page number in head/foot}[framenumber]
+
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 
